@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Projet_Reservia</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <p>Troucez votre hébergement pour des vacances de rêve</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet_Reservia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer ></script>
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <p><img src="images/logo/Reservia@3x.png" alt="Logo" /></p>
+        <nav>
+            <ol>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </ol>
+        </nav>
+    </header>
+<!-- Section recherche -->
+    <section>
+        <div class="titre1">
+            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+    <form method="get" action="traitement.php">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" value="Marseille, France" />
+        <button>
+            Rechercher
+        </button>              
+    </form>
+    <div class="filtres">
+        <h2>Filtres</h2>
+        <div>
+            <i class="fas fa-money-bill-wave"></i>
+            <h2>Économique</h2>
+        </div>
+        <div>
+            <i class="fas fa-child"></i>
+            <h2>Romantique</h2>
+        </div>
+        <div>
+            <i class="fas fa-heart"></i>
+            <h2>Animaux autorisés</h2>
+        </div>
+    </div>
+    <div class="info">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+    </section>    
+</body>
 </html>
