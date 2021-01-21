@@ -1,73 +1,70 @@
-/*-- Body --*/
-body{
-    font-family: 'Raleway', sans-serif;
-    margin: 0px;    
-    padding: 0px;
+/*--Body--*/
+body
+{
+    font-family: Raleway, sans-serif;
+    margin: 0;
 }
-
-
-
-
-/*---Header---*/
-
-.conteneur1{
-    margin: 20px auto;
-    width: 1400px;
-
+*
+{
+    box-sizing: border-box;
+}
+/*--Header--*/
+header{
+    width: 100%
+}
+.conteneurheader {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-header img{
-    height: 2.5rem;
-    
-}
-header a{
-    text-decoration: none;
-}
-nav ul{
+.logo {
     display: flex;
+    align-items: flex-end;
+}
+.logo img {
+    padding-left: 50px;
+    height: 2.5rem;
+}
+ul{
+    display: flex;
+}
+nav ul {
     list-style: none;
+    padding: 50px;
+    display: flex;
     justify-content: flex-end;
 }
-ul li{
-    margin-left: 2.5rem;
-}
-ul li:last-child{
-    margin-right: 2rem;
-}
-header ul li a {
+header a {
+    text-decoration: none;
     color: black;
+}
+
+ul li {
+    margin-left: 40px;
 }
 header ul li a:hover {
     border-top: 4px solid #0065FC;
     color: #0065FC;
-    padding-top: 2.2rem;
+    padding-top: 3.7rem;
 }
 .couleurinscrire {
     color: #0065FC;
-
 }
-
-
-
-/*---Section Recherche---*/
-
-
-
+/*--section recherche--*/
+.conteneurpage{
+    max-width: 100%;
+}
 .recherche{
-    margin: 20px auto;
-    width: 1400px;
+    padding-left: 50px;    
 }
-
 h1{
-   
+    font-size: 1.25rem;
     font-weight: bold;
-    
+    margin-top: 0px; 
 }
 .titre1 p{
-    margin-top: -1rem;
-    
+    margin-top: 0px;
+    font-size: 0.9rem;
 }
 
 .bouton{
@@ -104,12 +101,13 @@ h1{
 .rechercher i {
     display: none;
 }
-
+.conteneurfiltres {
+    padding-left: 50px;
+}
 .filtres{
     margin-top: 20px;
     display: flex;
     align-items: center;
-   
 }
 .bandefiltres{
     display: flex;
@@ -156,7 +154,7 @@ h1{
     padding-right: 1.5rem;
 }
 .boutonfiltre h2{
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
     transition: color 0.3s ease-in, font-size 0.3s ease-in;
 }
 .texterechercher{
@@ -167,8 +165,7 @@ h1{
 }
 .info{
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
 .info i{
     border: 2px solid #F2F2F2;
@@ -182,69 +179,66 @@ h1{
     margin-right: 1rem;
 }
 
-
-
-
-/*--- Section Hébergement ---*/
-#hebergementetpopulaire {
-
-    margin: 20px auto;
-    width: 1400px;
-}
-.blocsection {
+/*---Section hébergement---*/
+#conteneurhebergementsetpopulaires {
     display: flex;
-}
-.hebergement {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    
-    margin-right: 2rem;
     justify-content: space-between;
-}
-.hebergement h2{
     width: 100%;
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 0 50px;
+}
+#hebergements {
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 65em;
+}
+.conteneurhebergement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 .conteneurcarte {
-    
-    width: calc(30% - 30px);
-    background:white;
-    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
-    margin: 1rem;
-}
+    padding-bottom: 20px;
+    
 
+}
 .carteimage {
     width: 100%;
+    height: 8em;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
-    height: 150px;
-
+    padding: 5px 5px 0px 5px;
 }
-.texteimage p, h3 {
-    color: black;
-    margin: 0 0 0 1px;
+.carte {
+    width: 17.5em;
+    height: 14em;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0;
 }
-.texteimage p{
-    font-size: 1rem;   
+.titrehebergements h2{
+    font-size: 1.25rem;
+    padding: 20px 0px 20px 25px;
 }
-.texteimage h3{
-    font-size: 1rem;
-}
-.texteimage  {
-    
-    padding-left: 0.5rem;
+.texteimage{
+    padding-left: 15px;
 }
 .texteimage i {
     color: #0065FC;
-    font-size: 0.7rem;
-    
+    font-size: 0.7rem;   
+}
+.texteimage p, .texteimage h3 {
+    font-size: 1rem;
+    color: black;
+    margin: 5px 2px 10px 0;
 }
 .plus {
-    margin: 1rem;
+    padding-left: 25px;
+    padding-bottom: 30px;
 }
 .plus a {
     color:black;
@@ -253,46 +247,45 @@ h1{
 
 }
 
-
-/*--- Section Populaire ---*/
-.populaires {
+/*--Section Aside Populaires--*/
+aside {
     display: flex;
     flex-direction: column;
-    background: #f2f2f2;
+    width: 25em;
+    height: auto;
     border-radius: 20px;
-    padding: 2rem; 
+    background-color: #F2F2F2;
 }
-.titrepopulaire i {
-    font-size: 1.5rem;
-}
-.titrepopulaires h2 {
+.titrepopulaires {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    
+    width:100%;
+    padding: 20px;
+    font-size: 0.8em;
 }
-
+.titrepopulaires i {
+    font-size: 1.5em;
+}
+.tuilepopulaires {
+    margin-bottom: 40px;
+}
+#populaires {
+    display: flex;
+    flex-direction: column;
+}
 .populaireimage {
+    width: 8em;
+    height: 8em;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
     margin: 5px;
-    height: 130px;
-    width: 130px;
-    margin-top: 5px;
-    border-radius: 20px 0 0px 20px; 
-}
-.details{
-    font-size: 1rem;
-    
-    margin: 10px;
 }
 .cliccarte {
     display: flex;
     background-color: white;
-    margin-top: 30px;
-    width: 100%;
-    height: 140px;
-    border-radius: 25px 20px 20px 25px;
+    border-radius: 25px;
+    margin: 10px 20px;
 }
 .details h4 , p {
     color: black;
@@ -303,119 +296,103 @@ h1{
     font-size: 0.7rem;
 }
 
-/*--- Section Activités à Marseille ---*/
-#activites{
-    margin: 20px auto;
-    width: 1400px;
-}
-#divsectionactivites {
-    margin-top: 2rem;
-}
-
-#activites h2 {
-    
-    font-size: 1.25rem;
-
-}
-
-.conteneurtuiles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
-}
-.cartedesign {
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid #F2F2F2;
-    margin: 0;
-}
-.carteactivite {
-    border-radius: 10px;
-    margin: 10px;
-    text-decoration: none;
-
-}
-.cartedesign img {
-    width: 310px;
-    height: 410px;
-    border-radius: 10px 10px 0px 0px;
-}
-.carteactivite h4 {
-    font-size: 1rem;
-    color: black;
-    margin-left: 1rem;
-}
-.deuxcartes {
+/*--Activités à Marseille--*/
+#activites {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.cartedesign3_5 {
-    background-color: white;
-    border-radius: 20px;
+.titreactivites {
+    padding-left: 50px;
+}
+.titreactivites h2 {
+    font-size: 1.25rem;
+}
+#conteneuractivites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#conteneuractivites img {
+    width: 315px;
+    margin: auto;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    
+}
+.vieuxport figure, .pomegues figure, .frioul figure, .calanques figure, .damegarde figure, .longchamp figure {
     border: 2px solid #F2F2F2;
-    margin: 0;
-}
-.cartedesign3_5 img {
-    width: 320px;
-    height: 180px;
-    border-radius: 10px 10px 0 0;
-}
-.cartedesign2_5 {
-    background-color: white;
     border-radius: 20px;
-    border: 2px solid #F2F2F2;
-    margin: 0;
+    box-sizing: border-box;
 }
-.cartedesign2_5 img {
-    width: 320px;
-    height: 120px;
-    border-radius: 10px 10px 0 0;
+.vieuxport h3, .pomegues h3, .frioul h3, .calanques h3, .damegarde h3, .longchamp h3 {
+    padding-left: 20px;
 }
-.cartedesign1_2 {
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid #F2F2F2;
-    margin: 0;
+.vieuxport img, .calanques img {
+    height: 420px;
 }
-.cartedesign1_2 img {
-    width: 320px;
-    height: 150px;
-    border-radius: 10px 10px 0 0;
+.pomegues img {
+    height: 206px;
 }
-
+.frioul img {
+    height: 142px;
+}
+.damegarde img {
+    height: 175px;
+}
+.longchamp img {
+    height: 170px;
+}
+figcaption h3 {
+    font-size: 1rem;
+}
 
 
 /*---Footer---*/
-footer {
+#conteneurfooter {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
     background-color: #F2F2F2;
-    margin: 20px auto;
-    width: 1550px;
 }
-.apropos ul, .hebergements ul, .assistance ul {
-    list-style-type: none;
-    line-height: 2em;
+.apropos, .hebergements, .assistance {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    padding: 50px;
+    margin-top: 0px;
+    width: 50%;
 }
 a {
     text-decoration: none;
     color: black;
+    margin-top: 1em;
 }
-.title {
-    font-weight: bold;
 
-}
-.hebergements {
-    margin-left: 8rem;
-}
-.assistance {
-    margin-left: 8rem;
+
+
+
+
+
+
+
+@media screen and (min-width: 1600px) {
+    body {
+        body: 100%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    header {
+        max-width: 100rem;
+        margin: auto;
+    }
+    .conteneurpage {
+        max-width: 100rem;
+        margin: auto;
+    }
+    footer {
+        max-width: 100rem;
+        margin: auto;
+    }
 }
