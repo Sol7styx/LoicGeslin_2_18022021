@@ -177,7 +177,7 @@ h1{
 #hebergements {
     background: #F2F2F2;
     border-radius: 20px;
-    width: 65em;
+    width: 60em;
 }
 .conteneurhebergement {
     display: flex;
@@ -193,7 +193,7 @@ h1{
     padding-bottom: 20px;
     
 }
-.carteimage {
+.carteimage {s
     width: 100%;
     height: 8em;
     object-fit: cover;
@@ -217,7 +217,7 @@ h1{
 .texteimage{
     padding-left: 15px;
 }
-.texteimage i {
+.fa-star {
     color: #0065FC;
     font-size: 0.7rem;   
 }
@@ -235,6 +235,9 @@ h1{
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
+}
+.fa-star.grise {
+    color:#F2F2F2;
 }
 
 /*--Section Aside Populaires--*/
@@ -281,6 +284,12 @@ aside {
 .details h4 , p {
     color: black;
     font-size: 1rem;
+}
+.details h4 {
+    margin: 10px 0;
+}
+.details p {
+    margin: 0 0 40px 0;
 }
 .details i {
     color: #0065FC;
@@ -394,31 +403,44 @@ footer a {
 
 @media screen and (max-width: 768px) {
     /*-- responsiveHeader --*/
+   
     .conteneurheader {
         width: 95%;
         margin: 0 auto;
     }
-    header .conteneurheader > img{
+    .conteneurheader > img{
         order: 1;
+        padding-left: 10px;
+        padding-top: 20px;
     }
-    header .conteneurheader > a {
+    .conteneurheader a.inscription {
+        margin: 0;
+        padding: 20px 10px 0 0;
+    }
+    .conteneurheader > a {
         order: 2;
         flex-grow: 1;
         text-align: right;
         margin: 0;
+        font-size: 1.2em;
+        padding-right: 10px;
     }
-    header .conteneurheader > ul {
+    ul li a {
+        font-size: 1.2rem;
+    }
+    .conteneurheader > ul {
         order: 3;
+        padding: 0;
         display: flex;
         width: 107.5%;
         margin: 30px -5% 0;
     }
-    header .conteneurheader > ul > li > a {
+    .conteneurheader > ul > li > a {
         width: 100%;
         margin: 0;
         text-align: center;
     }
-    header .conteneurheader > ul > li {
+    .conteneurheader > ul > li {
         width: 50%;
         margin: 0;
         text-align: center;
@@ -429,19 +451,28 @@ footer a {
         color: #0065FC;
         padding-bottom: 3.5rem;
     }
-    header .conteneurheader > ul > li {
+    .conteneurheader > ul > li {
         border-bottom: 4px solid #F2F2F2;
     }
-    header .conteneurheader > ul > li:hover {
+    .conteneurheader > ul > li:hover {
         border-bottom: 4px solid #0065FC;
     }
     header ul li a:hover {
         border-top: none;
     }
     /*-- responsive Recherche --*/
-    
+    .titre1 h1 {
+        font-size: 1.7rem;
+    }
+    .titre1 p {
+        font-size: 1.2rem;
+    }
+    .barreentree {
+        font-size: 1.3rem;
+    }
     .recherche {
         margin-top: 20px;
+        padding-left: 15px;
     }
     .texterechercher {
         display: none;
@@ -452,11 +483,15 @@ footer a {
     .rechercher i {
         display:flex;
     }
+    .fa-search {
+        color: white;
+    }
 
     /*--- responsive Section Filtres ----*/
     .conteneurfiltres {
-        padding-left: 50px;
+        padding-left: 20px;
         margin: 0;
+        margin-bottom: 20px;
     }
     .filtres {
         display: flex;
@@ -468,11 +503,24 @@ footer a {
         margin: 0;
     }
     .boutonfiltre {
-        margin-bottom: 10px;
+        margin: 10px 10px 10px 0;
     }
     .info i{
         width: 30px;
-        height: 30px;
+        height: 30px;   
+    }
+    .info {
+        padding-left: 10px;
+    }
+    .boutonfiltre h2 {
+        font-size: 1.2rem;
+        padding: 0 15px 0 10px; 
+    }
+    .titrefiltres  h2{
+        font-size: 1.2rem;
+    }
+    .info p {
+        font-size: 1.1rem;
     }
 
     /*--- Responsive Section Hébergement --*/
@@ -492,6 +540,22 @@ footer a {
     }
     #populaires {
         width: 100%;
+    }
+    .cliccarte {
+        width: 100%;
+    }
+    .tuilepopulaires {
+        margin-bottom: 0px;
+    }
+    .details {
+        padding-left: 10px;
+    }
+    .details h4 {
+        font-size: 1.3rem;
+    }
+    .populaireimage {
+        height: 10em;
+        width: 38%;
     }
     #hebergements {
         display: flex;
@@ -520,7 +584,42 @@ footer a {
         object-fit: cover;
         width: 100%;
     }
+    .texteimage {
+        padding-bottom: 10px;
+    }
+    .texteimage h3 {
+        margin: 5px 2px 5px 0px;
+    }
+    .texteimage p {
+        margin: 0 2px 5px 0;
+    }
 
+    /*--- Responsive Activités à Marseilles ---*/
+    #activites {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .titreactivites {
+        padding-left: 20px;
+    }
+    #conteneuractivites {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #conteneuractivites figure {
+        margin: 20px;
+    }
+    #conteneuractivites img {
+        width: 100%;
+        height: 200px;
+    }
+    .vieuxport, .premierdouble, .calanques, .seconddouble, {
+        width: 100%;
+    }
     /*--- Responsive Section Footer --*/
     #conteneurfooter {
         display: flex;
@@ -533,4 +632,5 @@ footer a {
         width: 100%;
         
     }
+
    }
