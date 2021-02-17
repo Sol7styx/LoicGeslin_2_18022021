@@ -667,7 +667,8 @@ footer a {
     }
     #populaires {
         align-items: center;
-        width: 100%;       
+        width: 100%;  
+        padding-bottom: 20px;     
     }
     aside {
         width: 100%;
@@ -760,7 +761,7 @@ footer a {
         margin: 5px 2px 5px 0;
     }
     #conteneuractivites img{
-        width: 286px;
+        width: 285px;
     }
     #conteneuractivites {
         padding: 0 20px;
@@ -791,7 +792,7 @@ footer a {
         margin: auto;
     }
     footer {
-        max-width: 100rem;
+        max-width: 150rem;
         margin: auto;
     }
     #hebergements {
